@@ -6,7 +6,7 @@ class Config():
     batch_size = 256
     generator_feature=64
     discriminator_feature=64
-    data_path = "/home/zy/zy/tzy/Animation_Head/data/"
+    data_path = "path"
 
     path = os.path
 

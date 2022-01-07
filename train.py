@@ -20,7 +20,7 @@ transform=tv.transforms.Compose([
 dataset=tv.datasets.ImageFolder(root=opt.data_path,transform=transform)
 dataloader=torch.utils.data.DataLoader(dataset,batch_size=opt.batch_size,shuffle=True,num_workers=4,drop_last=True)
 
-device = torch.device("cuda:3" if torch.cuda.is_available() else "cpu")
+device = torch.device("cuda:2" if torch.cuda.is_available() else "cpu")
 
 G = Generator(opt).to(device)
 D = Discriminator(opt).to(device)
